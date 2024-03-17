@@ -1,0 +1,616 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url("./background.png");
+  background-size: cover;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 400;
+  left: -550;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.title h1 {
+  font-size: 3.5vw;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  color: #48a14d;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0;
+  background-color: transparent;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #48a14d;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.nav li {
+  margin-left: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #edd94c;
+  transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+  color: white;
+}
+
+.right {
+  max-width: 750px;
+  height: 730px;
+  background-image: url("./cocktail.png");
+  background-size: cover;
+  position: relative;
+  left: 640px;
+  top: 50px;
+}
+
+.motto {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 0px;
+  background-color: #48a14d;
+}
+
+.motto p {
+  font-size: 1.5rem;
+  background-color: #edd94c;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  font-stretch: ultra-expanded;
+  background-image: url("./imageonline-co-noisedimage.png");
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  background-color: #48a14d;
+  align-items: center;
+  padding-left: 80px;
+  gap: 80px;
+}
+
+.form-container {
+  background-color: #edd94c;
+  border-radius: 200px 63px 200px 64px;
+  -moz-border-radius: 200px 63px 200px 64px;
+  -webkit-border-radius: 200px 63px 200px 64px;
+  border: 3px ridge #48a14d;
+  box-shadow: 0 5px 10px black;
+  padding: 30px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./imageonline-co-noisedimage.png");
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.form-container h3 {
+  margin: 0 0 10px 0;
+  padding-top: 20px;
+
+  font-size: 2vw;
+  color: rgb(12, 82, 0);
+}
+
+.form-container input[type="text"] {
+  width: 80%;
+  font-size: 1rem;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 3px solid rgb(12, 82, 0);
+  color: rgb(12, 82, 0);
+  border-radius: 8px;
+}
+
+.form-container button {
+  width: 80%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #48a14d;
+  color: #fff;
+  border: 2px solid rgb(12, 82, 0);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: rgb(12, 82, 0);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 18px;
+  line-height: 1.6;
+  padding-top: 10px;
+  color: rgb(12, 82, 0);
+}
+
+.otherForm {
+  background-color: #edd94c;
+  border-radius: 200px 39px 200px 39px;
+  -moz-border-radius: 200px 39px 200px 39px;
+  -webkit-border-radius: 200px 39px 200px 39px;
+  border: 3px ridge #48a14d;
+  -webkit-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 55px;
+  background-image: url("./imageonline-co-noisedimage.png");
+}
+
+.otherForm h3 {
+  margin: 0 0 10px 0;
+  font-size: 2vw;
+  color: rgb(12, 82, 0);
+}
+
+.otherForm button {
+  width: 80%;
+  padding: 15px;
+  margin: 20px;
+  background-color: #48a14d;
+  color: #fff;
+  border: 2px solid rgb(12, 82, 0);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1vw;
+  transition: background-color 0.3s ease;
+}
+
+.otherForm button:hover {
+  background-color: rgb(12, 82, 0);
+}
+
+.content {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-container form2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: #48a14d;
+  align-items: center;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-container h3 {
+  font-size: 24px;
+  color: rgb(12, 82, 0);
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #48a14d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357f3f;
+}
+
+.jokes {
+  background-color: #edd94c;
+  border-radius: 39px 200px 38px 200px;
+  -moz-border-radius: 39px 200px 38px 200px;
+  -webkit-border-radius: 39px 200px 38px 200px;
+  border: 3px ridge #48a14d;
+  -webkit-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("./imageonline-co-noisedimage.png");
+}
+
+.drink {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: transparent;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cocktail {
+  background-color: #edd94c;
+  border-radius: 200px 63px 200px 64px;
+  -moz-border-radius: 200px 63px 200px 64px;
+  -webkit-border-radius: 200px 63px 200px 64px;
+  border: 3px ridge #48a14d;
+  box-shadow: 0 5px 10px black;
+  padding: 30px;
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./imageonline-co-noisedimage.png");
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.drink img {
+  width: 30%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.drink p {
+  color: black;
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.cocktail ul {
+  list-style-type: circle;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.drink li {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.drink h3 {
+  color: rgb(12, 82, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    background-size: cover;
+  }
+
+  .title {
+    position: relative;
+    top: 100px;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .motto p {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form-container,
+  .otherForm,
+  .jokes,
+  .cocktail {
+    width: 90%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-container h3,
+  .otherForm h3 {
+    font-size: 1.5vw;
+  }
+
+  .form-container input[type="text"] {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .form-container button,
+  .otherForm button {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 10px;
+  }
+
+  .content {
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .drink img {
+    width: 50%;
+  }
+}
+
+.inputGame {
+  background-color: #edd94c;
+  border-radius: 200px 39px 200px 39px;
+  -moz-border-radius: 200px 39px 200px 39px;
+  -webkit-border-radius: 200px 39px 200px 39px;
+  border: 3px ridge #48a14d;
+  -webkit-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 55px;
+  background-image: url("./imageonline-co-noisedimage.png");
+}
+
+.gameResult {
+  background-color: #edd94c;
+  border-radius: 39px 200px 38px 200px;
+  -moz-border-radius: 39px 200px 38px 200px;
+  -webkit-border-radius: 39px 200px 38px 200px;
+  border: 3px ridge #48a14d;
+  -webkit-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("./imageonline-co-noisedimage.png");
+}
+
+.inputGame input {
+  width: 70%;
+  font-size: 1rem;
+  padding: 8px;
+  margin-top: 15px;
+  border: 3px solid rgb(12, 82, 0);
+  color: rgb(12, 82, 0);
+  border-radius: 8px;
+}
+
+.inputGame .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputGame button {
+  width: 48%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #48a14d;
+  color: #fff;
+  border: 2px solid rgb(12, 82, 0);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.inputGame button:hover {
+  background-color: rgb(12, 82, 0);
+}
+
+.newGame {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  background-color: #48a14d;
+  align-items: center;
+  padding-left: 80px;
+  gap: 80px;
+}
+
+.result-container {
+  margin-top: 50px;
+}
+
+.result-container p {
+  padding: 10px;
+  color: rgb(12, 82, 0);
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  background-color: #48a14d;
+  align-items: center;
+  padding-left: 80px;
+  gap: 80px;
+}
+
+.game3 {
+  background-color: #edd94c;
+  border-radius: 39px 200px 38px 200px;
+  -moz-border-radius: 39px 200px 38px 200px;
+  -webkit-border-radius: 39px 200px 38px 200px;
+  border: 3px ridge #48a14d;
+  -webkit-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 66px 0px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("./imageonline-co-noisedimage.png");
+}
+
+.game2 {
+  background-color: #edd94c;
+  border-radius: 200px 63px 200px 64px;
+  -moz-border-radius: 200px 63px 200px 64px;
+  -webkit-border-radius: 200px 63px 200px 64px;
+  border: 3px ridge #48a14d;
+  box-shadow: 0 5px 10px black;
+  padding: 30px;
+  width: 300px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./imageonline-co-noisedimage.png");
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.cocktailInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: rgb(12, 82, 0);
+}
+
+.game3 input[type="text"] {
+  width: 150%;
+  font-size: 1rem;
+  padding: 10px;
+  margin-left: -40px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border: 3px solid rgb(12, 82, 0);
+  color: rgb(12, 82, 0);
+  border-radius: 8px;
+}
+
+.game3 button {
+  width: 150%;
+  padding: 12px;
+  margin-left: -40px;
+  margin-top: 20px;
+  background-color: #48a14d;
+  color: #fff;
+  border: 2px solid rgb(12, 82, 0);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.game3 button:hover {
+  background-color: rgb(12, 82, 0);
+}

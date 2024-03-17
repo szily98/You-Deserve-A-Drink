@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOU DESERVE A DRINK</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="logo">
+          <p id="logoText">YDAD</p>
+        </div>
+
+        <div class="nav">
+          <li><a href="https://lovasz-szilard.blogspot.com/">ABOUT</a></li>
+          <li>
+            <a
+              href="https://open.spotify.com/playlist/6l6pMAcY2Kf1mW8bc0dvPo?si=b5c5062a4808417f"
+              >THE PLAYLIST</a
+            >
+          </li>
+          <li><a href="https://www.instagram.com/lovasz_szily/">CONTACT</a></li>
+        </div>
+      </div>
+
+      <div class="title">
+        <h1>YOU DESERVE A DRINK</h1>
+      </div>
+      <div class="right"></div>
+    </div>
+
+    <div class="motto">
+      <p>CREATE YOUR OWN BOOZY MISADVENTURES AND TALES OF DEBUCHERY.</p>
+    </div>
+
+    <div class="main">
+      <div class="otherForm">
+        <h3>Let's play a game!</h3>
+        <button id="buttonGame">Drink if you...</button>
+
+        <button id="quoteButton">Conversation starter...</button>
+
+        <button id="jokeButton">Tell me a joke!</button>
+      </div>
+
+      <div class="jokes">
+        <div id="content" class="content"></div>
+      </div>
+    </div>
+
+    <div class="newGame">
+      <div class="gameResult">
+        <div class="result-container" id="resultContainer"></div>
+      </div>
+      <div class="inputGame">
+        <input
+          type="text"
+          id="player1"
+          name="player1"
+          placeholder="Player 1"
+        /><br />
+        <input
+          type="text"
+          id="player2"
+          name="player2"
+          placeholder="Player 2"
+        /><br />
+        <input
+          type="text"
+          id="player3"
+          name="player3"
+          placeholder="Player 3"
+        /><br />
+        <input
+          type="text"
+          id="player4"
+          name="player4"
+          placeholder="Player 4"
+        /><br />
+        <div class="buttonContainer">
+          <button onclick="assignRandomDrinks()">Assign Drinks</button>
+          <button onclick="takeSips()">Take a Sip</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ingredients">
+      <div class="game3">
+        <form id="cocktailForm">
+          <input
+            type="text"
+            id="ingredients"
+            name="ingredients"
+            placeholder="Name the drink base..."
+          /><br /><br />
+          <button type="submit">Give me a cocktail</button>
+        </form>
+      </div>
+
+      <div class="game2">
+        <div id="cocktailInfo" class="cocktailInfo"></div>
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="menu">
+        <div class="form-container form1">
+          <h3>Let's get you a drink!</h3>
+          <input
+            id="cocktailNameInput"
+            type="text"
+            placeholder="Search by name... and/or ingredient"
+          />
+          <button onclick="searchCocktail()">Search</button>
+        </div>
+      </div>
+
+      <div id="cocktailResults" class="drink"></div>
+      <div class="ingredients"></div>
+    </div>
+
+    <script src="./ydad.js"></script>
+  </body>
+</html>
